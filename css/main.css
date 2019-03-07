@@ -112,7 +112,7 @@
 
 .news-article > p{
     padding: 0 0 2rem 2rem;
-    width: 95%;
+    width: calc(95% - 2rem);
     font-family: 'Franklin Gothic Book';
     font-size: 1.2rem;
     text-align: justify;
@@ -128,7 +128,7 @@
 .more-buttonwrapper{
     width: 100%;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 }
 
 .more-button{
@@ -156,7 +156,11 @@
     align-items: flex-start;
     width: 95%;
     margin: 0 auto;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
+}
+
+.achive-button{
+    background-color: #221f1f;
 }
 
 .achive-box{
@@ -188,7 +192,7 @@
     align-items: flex-start;
     width: 95%;
     margin: 0 auto;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
 }
 
 .team-box{
@@ -310,3 +314,67 @@ footer > a > img{
     margin-top: 4rem;
 }
 
+@media (max-width: 1050px){
+    #hero-section > h1{
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    #hero-section > button{
+        font-size: 0.8rem;
+    }
+
+    #hero-date{
+        font-size: 3rem;
+    }
+
+    .teamwrapper{
+        width: 100%;
+    }
+
+    .team-box{
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .simonyi{
+        width: 90%;
+        margin: 0;
+    }
+
+    .schonherz{
+        width: 90%;
+        margin: 5rem 0 0 0;
+    }
+
+    .schdesign_wrapper{
+        height: 9rem;
+    }
+
+    #schdesign{
+        width: 90%;
+    }
+
+    .news-article{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .team-infowrapper > .subtitlewrapper > h3{
+        font-size: 2rem;
+    }
+
+    .team-infowrapper > p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1051px){
+    #achievements > .more-buttonwrapper > .more-button{
+        display: none;
+    }
+
+    #teams > .more-buttonwrapper > .more-button{
+        display: none;
+    }
+}
