@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'BebesKai';
+    src: url('../res/fonts/eot/BebasKai.eot'); /* IE9 */
+	src: url('../res/fonts/eot/BebasKai.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../res/fonts/woff20cffbased/BebasKai.woff2') format('woff2'), /* Modern Browsers */
+         url('../res/fonts/woff-cffbased/BebasKai.woff') format('woff'), /* Modern Browsers */
+         url('../res/fonts/ttf/BebasKai.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'FranklinGothic-Book';
+    src: url('../res/fonts/eot/FranklinGothic-Book.eot'); /* IE9 */
+	src: url('../res/fonts/eot/FranklinGothic-Book.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../res/fonts/woff20cffbased/FranklinGothic-Book.woff2') format('woff2'), /* Modern Browsers */
+         url('../res/fonts/woff-cffbased/FranklinGothic-Book.woff') format('woff'), /* Modern Browsers */
+         url('../res/fonts/ttf/FranklinGothic-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
