@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    font-family: 'BebasKai';
+    position: relative;
+    background-image: url(../assets/img/hero_dark-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#hero-section > h1{
+    font-size: 8em;
+    width: 100%;
+    margin: 0;
+    padding: 10rem 0 0 0;
+    color: #E50914;
+    text-shadow: 2px 2px 2px black;
+}
+
+#hero-date{
+    width: 100%;
+    font-size: 4em;
+    margin-top: 1rem;
+    color: white;
+}
+
+.shiningUnderline{
+    position: relative;
+}
+
+.shiningUnderline::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.5px;
+    width: 80%;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.22) 1%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.22) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.22) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */    
+}
+
+#hero-section > button{
+    border: none;
+    background-color: #E50914;
+    color: white;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+#news{
+    background-color: #221f1f;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    font-family: 'BebasKai';
+    display: inline;
+}
+
+.titlewrapper{
+    text-align: center;
+    padding-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.news-article{
+    position: relative;
+    width: 70%;
+    background-color: #2F2F2F;
+    color: white;
+    margin: 0 auto 4rem auto;
+    padding-bottom: 2rem;
+}
+
+.subtitlewrapper{
+    padding: 2rem 0 1rem calc(2rem + 10px);
+}
+
+.subtitlewrapper > h3{
+    font-family: 'BebasKai';
+    font-size: 2rem;
+    padding: 0;
+    position: relative;
+}
+
+.subtitlewrapper > h3::before{
+    content: '';
+    height: 60%;
+    width: 7.5px;
+    background-color: red;
+    position: absolute;
+    bottom: 20%;
+    left: -10px;
+}
+
+.news-article > p{
+    padding: 0 0 2rem 2rem;
+    width: 95%;
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#news-date{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-family: 'Franklin Gothic Book';
+}
+
+.more-buttonwrapper{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.more-button{
+    border: none;
+    text-align: center;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: lighter;
+    font-size: 2rem;
+    background-color: #2F2F2F;
+    cursor: pointer;
+}
+
+#achievements{
+    background-color: #2f2f2f;
+    color: white;
+}
+
+.achive-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+
+.achive-box{
+    background-color: #221F1F;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.achive-box > .shiningUnderline{
+    margin-bottom: 2rem;
+}
+
+.achive-box > p{
+    font-family: 'Franklin Gothic Book';
+    text-align: justify;
+}
+
+#teams{
+    background-color: #221f1f;
+    color: white;
+}
+
+.teamwrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+
+.team-box{
+    background-color: #2F2F2F;
+    position: relative;
+    padding: 2rem;
+    margin: 4rem 3rem;
+    width: 40%;
+    height: 10rem;
+}
+
+.team-imgwrapper{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 30%;
+    height: 100%;
+}
+
+.team-imgwrapper > img{
+    width: 80%;
+    margin: 1rem;  
+}
+
+.team-infowrapper{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    font-family: 'Franklin Gothic Book';
+}
+
+.team-infowrapper > .subtitlewrapper > h3{
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.team-infowrapper > .subtitlewrapper > h3::before{
+    width: 14px;
+    left: -20px;
+}
+
+.team-infowrapper > p{
+    padding-left: calc(1rem + 5px);
+    font-size: 2rem;
+}
+
+footer > img{
+    background-color: #221f1f;
+}
+footer{
+    background-color: #E50914;
+    text-align: center; 
+}
+footer > *{
+    color: white;
+    font-family: 'Franklin Gothic Book';
+}
+
+footer > .titlewrapper{
+    margin-bottom: 0;
+}
+
+.contactwrapper > h4{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.contactwrapper{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.rulewrapper{
+    text-align: center;
+    padding: 0.5rem;
+    padding: 5rem 0 5rem 0;
+}
+
+.rulewrapper > h4{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+#sponsors{
+    width: 100%;
+    position: relative;
+}
+
+.simonyi{
+    width: 25%;
+    margin-left: 5rem;
+}
+
+.schonherz{
+    width: 25%;
+    margin-left: 5rem;
+}
+
+#schdesign{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+}
+
+.schdesign_wrapper{
+    width: 100%;
+    position: relative;
+    height: 7rem;
+}
+
+footer > a > img{
+    margin-top: 4rem;
+}
+
