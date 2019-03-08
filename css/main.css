@@ -272,6 +272,7 @@
 
 footer > img {
   background-color: #221f1f;
+  margin-bottom: -200px;
 }
 footer {
   background-color: #e50914;
@@ -280,6 +281,10 @@ footer {
 footer > * {
   color: white;
   font-family: "Franklin Gothic Book";
+}
+footer > .contactwrapper a {
+  color: white;
+  text-decoration: none;
 }
 
 footer > .titlewrapper {
@@ -300,8 +305,7 @@ footer > .titlewrapper {
 
 .rulewrapper {
   text-align: center;
-  padding: 0.5rem;
-  padding: 5rem 0 5rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .rulewrapper > a > h4 {
@@ -311,7 +315,8 @@ footer > .titlewrapper {
   color: white;
 }
 
-.rulewrapper > a {
+.rulewrapper > a,
+#sponsors > a {
   text-decoration: none;
 }
 
@@ -320,13 +325,10 @@ footer > .titlewrapper {
   position: relative;
 }
 
-.simonyi {
+#simonyi,
+#schonherz {
   width: 25%;
-  margin-left: 5rem;
-}
-
-.schonherz {
-  width: 25%;
+  max-width: 380px;
   margin-left: 5rem;
 }
 
@@ -336,6 +338,7 @@ footer > .titlewrapper {
   left: 50%;
   transform: translateX(-50%);
   bottom: 1rem;
+  max-width: 250px;
 }
 
 .schdesign_wrapper {
@@ -373,18 +376,21 @@ footer > a > img {
   }
 
   .team-box {
-    margin: 1rem 0;
-    width: 100%;
+    margin: 2rem;
   }
 
-  .simonyi {
-    width: 90%;
-    margin: 0;
+  footer > img {
+    margin: 0 -150px -175px;
   }
 
-  .schonherz {
+  #simonyi {
     width: 90%;
-    margin: 5rem 0 0 0;
+    margin: 0 5rem;
+  }
+
+  #schonherz {
+    width: 90%;
+    margin: 5rem 5rem 0;
   }
 
   .schdesign_wrapper {
