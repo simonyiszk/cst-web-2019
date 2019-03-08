@@ -18,20 +18,39 @@ function toggleTeams() {
 }
 
 function toggleAchieves() {
-    var achieves = document.getElementsByClassName("achieve-hidden-mobile");
-    let isHidden = achieves[0].style.display === "none";
-    for (let index = 0; index < achieves.length; index++) {
-      const element = achieves[index];
-      if (isHidden) {
-        element.style.display = "block";
-      } else {
-        element.style.display = "none";
-      }
-    }
-    let button = document.getElementById("achieve-button");
+  var achieves = document.getElementsByClassName("achieve-hidden-mobile");
+  let isHidden = achieves[0].style.display === "none";
+  for (let index = 0; index < achieves.length; index++) {
+    const element = achieves[index];
     if (isHidden) {
-      button.innerHTML = "X";
+      element.style.display = "block";
     } else {
-      button.innerHTML = "V";
+      element.style.display = "none";
     }
   }
+  let button = document.getElementById("achieve-button");
+  if (isHidden) {
+    button.innerHTML = "X";
+  } else {
+    button.innerHTML = "V";
+  }
+}
+
+function toggleNews() {
+  var news = document.getElementsByClassName("news-hidden");
+  let isHidden = news[0].style.display === "none";
+  for (let index = 0; index < news.length; index++) {
+    const element = news[index];
+    if (isHidden) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+  let button = document.getElementById("news-button");
+  if (isHidden) {
+    button.innerHTML = "X";
+  } else {
+    button.innerHTML = "V";
+  }
+}
