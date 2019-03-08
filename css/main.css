@@ -147,7 +147,7 @@
     color: white;
 }
 
-.achive-wrapper{
+.achieve-wrapper{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -159,21 +159,21 @@
     padding-bottom: 2rem;
 }
 
-.achive-button{
+#achieve-button{
     background-color: #221f1f;
 }
 
-.achive-box{
+.achieve-box{
     background-color: #221F1F;
     margin: 1rem;
     padding: 2rem;
 }
 
-.achive-box > .shiningUnderline{
+.achieve-box > .shiningUnderline{
     margin-bottom: 2rem;
 }
 
-.achive-box > p{
+.achieve-box > p{
     font-family: 'Franklin Gothic Book';
     text-align: justify;
 }
@@ -334,6 +334,7 @@ footer > a > img{
         font-size: 3rem;
     }
 
+    .achieve-hidden-mobile,
     .team-hidden-mobile{
         display: none;
     }
@@ -380,10 +381,7 @@ footer > a > img{
 }
 
 @media (min-width: 1051px){
-    #achievements > .more-buttonwrapper > .more-button{
-        display: none;
-    }
-
+    #achievements > .more-buttonwrapper > .more-button, 
     #teams > .more-buttonwrapper > .more-button{
         display: none;
     }

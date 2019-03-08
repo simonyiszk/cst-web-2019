@@ -9,10 +9,29 @@ function toggleTeams() {
       element.style.display = "none";
     }
   }
-  let button = document.getElementById("more-team-button");
+  let button = document.getElementById("team-button");
   if (isHidden) {
     button.innerHTML = "X";
   } else {
     button.innerHTML = "V";
   }
 }
+
+function toggleAchieves() {
+    var achieves = document.getElementsByClassName("achieve-hidden-mobile");
+    let isHidden = achieves[0].style.display === "none";
+    for (let index = 0; index < achieves.length; index++) {
+      const element = achieves[index];
+      if (isHidden) {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+    let button = document.getElementById("achieve-button");
+    if (isHidden) {
+      button.innerHTML = "X";
+    } else {
+      button.innerHTML = "V";
+    }
+  }

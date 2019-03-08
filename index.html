@@ -25,9 +25,11 @@
         Netflix & Chillagtúra
       </h1>
       <p id="hero-date">2019.04.27.</p>
-      <button>
-        <h2 class="shiningUnderline">Jelentkezés</h2>
-      </button>
+      <a href="#">
+        <button>
+          <h2 class="shiningUnderline">Jelentkezés</h2>
+        </button>
+      </a>
     </section>
 
     <section id="news">
@@ -83,62 +85,62 @@
           Achievementek
         </h2>
       </div>
-      <div class="achive-wrapper">
-        <div class="achive-box">
+      <div class="achieve-wrapper">
+        <div class="achieve-box">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="achive-box">
+        <div class="achieve-box achieve-hidden-mobile">
           <div class="shiningUnderline">
             <img src="./assets/img/achi.svg" alt="Achievement" />
           </div>
@@ -146,7 +148,11 @@
         </div>
       </div>
       <div class="more-buttonwrapper">
-        <button class="more-button achive-button">
+        <button
+          onclick="toggleAchieves()"
+          class="more-button"
+          id="achieve-button"
+        >
           V
         </button>
       </div>
@@ -301,7 +307,7 @@
         </div>
       </div>
       <div class="more-buttonwrapper">
-        <button onclick="toggleTeams()" class="more-button" id="more-team-button">
+        <button onclick="toggleTeams()" class="more-button" id="team-button">
           V
         </button>
       </div>
