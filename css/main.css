@@ -190,7 +190,7 @@
   background-color: #221f1f;
   margin: 1rem;
   padding: 2rem;
-  max-width: calc(200px - 6rem);
+  max-width: calc(200px - 6rem + 0.4rem);
 }
 
 .achieve-box > .shiningUnderline {
@@ -209,12 +209,12 @@
 
 .teamwrapper {
   display: flex;
-  width: 100%;
+  width: 90%;
+  max-width: calc(1000px + 6rem);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  width: 95%;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
@@ -224,8 +224,8 @@
   position: relative;
   padding: 2rem;
   margin: 4rem 3rem;
-  width: 40%;
-  height: 10rem;
+  width: calc(500px - 7rem);
+  height: 6rem;
 }
 
 .team-imgwrapper {
@@ -251,19 +251,23 @@
   font-family: "Franklin Gothic Book";
 }
 
+.team-infowrapper > .subtitlewrapper {
+  padding: 2rem 0 1rem calc(1rem + 5px + 18px);
+}
+
 .team-infowrapper > .subtitlewrapper > h3 {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .team-infowrapper > .subtitlewrapper > h3::before {
-  width: 14px;
-  left: -20px;
+  width: 12px;
+  left: -18px;
 }
 
 .team-infowrapper > p {
   padding-left: calc(1rem + 5px);
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 footer > img {
