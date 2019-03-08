@@ -273,11 +273,11 @@
 footer > img {
   background-color: #221f1f;
   margin-bottom: -200px;
-  overflow: hidden;
 }
 footer {
   background-color: #e50914;
   text-align: center;
+  overflow: hidden;
 }
 footer > * {
   color: white;
@@ -400,7 +400,7 @@ footer > a > img {
   .team-infowrapper > .subtitlewrapper {
     padding: 0;
   }
-  
+
   .team-infowrapper > .subtitlewrapper > h3 {
     font-size: 1.5rem;
   }
