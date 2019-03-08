@@ -1,8 +1,26 @@
+window.onload = function() {
+  var teams = document.getElementsByClassName("team-hidden-mobile");
+  for (let index = 0; index < teams.length; index++) {
+    var element = teams[index];
+    element.style.display = "none";
+  }
+  var achieves = document.getElementsByClassName("achieve-hidden-mobile");
+  for (let index = 0; index < achieves.length; index++) {
+    var element = achieves[index];
+    element.style.display = "none";
+  }
+  var news = document.getElementsByClassName("news-hidden");
+  for (let index = 0; index < news.length; index++) {
+    var element = news[index];
+    element.style.display = "none";
+  }
+}
+
 function toggleTeams() {
   var teams = document.getElementsByClassName("team-hidden-mobile");
   let isHidden = teams[0].style.display === "none";
   for (let index = 0; index < teams.length; index++) {
-    const element = teams[index];
+    var element = teams[index];
     if (isHidden) {
       element.style.display = "block";
     } else {
@@ -14,12 +32,14 @@ function toggleTeams() {
     button.innerHTML = "X";
   } else {
     button.innerHTML = "V";
+    var teamsSection = document.getElementById('teams');
+    teamsSection.scrollIntoView();
   }
 }
 
 function toggleAchieves() {
   var achieves = document.getElementsByClassName("achieve-hidden-mobile");
-  let isHidden = achieves[0].style.display === "none";
+  var isHidden = achieves[0].style.display === "none";
   for (let index = 0; index < achieves.length; index++) {
     const element = achieves[index];
     if (isHidden) {
@@ -33,6 +53,8 @@ function toggleAchieves() {
     button.innerHTML = "X";
   } else {
     button.innerHTML = "V";
+    var achievements = document.getElementById('achievements');
+    achievements.scrollIntoView();
   }
 }
 
@@ -52,5 +74,7 @@ function toggleNews() {
     button.innerHTML = "X";
   } else {
     button.innerHTML = "V";
+    var newsSection = document.getElementById('news');
+    newsSection.scrollIntoView();
   }
 }
