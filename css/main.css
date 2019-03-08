@@ -100,10 +100,11 @@
 
 .news-article {
   position: relative;
-  width: 70%;
+  width: 90%;
+  max-width: 1000px;
   background-color: #2f2f2f;
   color: white;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
 }
 
@@ -171,12 +172,11 @@
 
 .achieve-wrapper {
   display: flex;
-  width: 100%;
+  width: 70%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  width: 95%;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
