@@ -94,7 +94,7 @@
 
 .titlewrapper {
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 5rem;
   margin-bottom: 3rem;
 }
 
@@ -151,7 +151,7 @@
 .more-buttonwrapper {
   width: 100%;
   text-align: center;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 .more-button {
@@ -172,7 +172,8 @@
 
 .achieve-wrapper {
   display: flex;
-  width: 70%;
+  width: 90%;
+  max-width: calc(1000px + 2rem);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -189,6 +190,7 @@
   background-color: #221f1f;
   margin: 1rem;
   padding: 2rem;
+  max-width: calc(200px - 6rem);
 }
 
 .achieve-box > .shiningUnderline {
@@ -197,7 +199,7 @@
 
 .achieve-box > p {
   font-family: "Franklin Gothic Book";
-  text-align: justify;
+  text-align: center;
 }
 
 #teams {
