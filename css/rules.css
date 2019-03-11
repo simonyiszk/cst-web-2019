@@ -1,112 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-body{
-    background-color: #221f1f;
+body {
+  background-color: #221f1f;
 }
 
-.rule_title{
-    font-size: 5em;
-    width: 100%;
-    margin: 0;
-    padding: 10rem 0 0 0;
-    color: #E50914;
-    text-shadow: 2px 2px 2px black;
-    font-family: 'BebasKai';
-    text-align: center;
+.rule_title {
+  font-size: 5em;
+  width: 100%;
+  margin: 0;
+  padding: 10rem 0 0 0;
+  color: #e50914;
+  text-shadow: 2px 2px 2px black;
+  font-family: "BebasKai";
+  text-align: center;
 }
 
-.rule_subtitle{
-    width: 100%;
+.rule_subtitle {
+  margin: 4rem auto 5rem;
 }
 
-.shiningUnderline{
-    position: relative;
-    margin: 5rem auto 4rem auto;
-    color: white;
-    font-family: 'BebasKai';
-    font-size: 3rem;
-    font-weight: lighter;
-    width: max-content;
+.title {
+  font-size: 3rem;
+  color: white;
+  font-family: "BebasKai";
+  display: inline;
 }
 
-.shiningUnderline::after{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 1.5px;
-    width: 80%;
-    background: -moz-linear-gradient(left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.22) 1%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.22) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.22) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */    
+.shiningUnderline {
+  position: relative;
 }
 
-.subtitlewrapper{
-    padding: 2rem 0 1rem calc(2rem + 10px);
+.shiningUnderline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5px;
+  width: 80%;
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
 }
 
-.subtitlewrapper > h3{
-    font-family: 'BebasKai';
+.subtitlewrapper {
+  padding: 2rem 0 1rem calc(2rem + 10px);
+}
+
+.subtitlewrapper > h3 {
+  font-family: "BebasKai";
+  font-size: 2rem;
+  padding: 0;
+  position: relative;
+}
+
+.subtitlewrapper > h3::before {
+  content: "";
+  height: 60%;
+  width: 7.5px;
+  background-color: red;
+  position: absolute;
+  bottom: 20%;
+  left: -10px;
+}
+
+.rulecontainer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #2f2f2f;
+  color: white;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.subtitlewrapper > h3 {
+  text-align: left;
+}
+
+.ruletext {
+  width: calc(95% - 5px);
+  margin: 0 auto;
+}
+
+.rule_p {
+  text-align: justify;
+  font-family: "Franklin Gothic Book";
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1050px) {
+  .rule_title {
+    word-spacing: 100vw;
+  }
+
+  .rulecontainer {
+    width: 90%;
+  }
+
+  .rule_title {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+
+  .shiningUnderline {
     font-size: 2rem;
-    padding: 0;
-    position: relative;
-}
-
-.subtitlewrapper > h3::before{
-    content: '';
-    height: 60%;
-    width: 7.5px;
-    background-color: red;
-    position: absolute;
-    bottom: 20%;
-    left: -10px;
-}   
-
-.rulecontainer{
-    width: 80%;
-    margin: 0 auto;
-    background-color: #2F2F2F;
-    color: white;
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
-}
-
-.subtitlewrapper > h3{
-    text-align: left;
-}
-
-.ruletext{
-    width: calc(95% - 5px);
-    margin: 0 auto;
-}
-
-.rule_p{
-    text-align: justify;
-    font-family: 'Franklin Gothic Book';
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 1050px){
-    .rule_title {
-        word-spacing: 100vw;
-    }
-
-    .rulecontainer{
-        width: 90%;
-    }
-
-    .rule_title{
-        font-size: 4rem;
-        padding-top: 4rem;
-    }
-
-    .shiningUnderline{
-        font-size: 2rem;
-    }
+  }
 }

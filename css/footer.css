@@ -1,16 +1,68 @@
-footer > img {
-  background-color: #221f1f;
-  margin-bottom: -200px;
+.title {
+  font-size: 3rem;
+  color: white;
+  font-family: "BebasKai";
+  display: inline;
 }
+
+.titlewrapper {
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.shiningUnderline {
+  position: relative;
+}
+
+.shiningUnderline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5px;
+  width: 80%;
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.22) 1%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
 footer {
   background-color: #e50914;
   text-align: center;
   overflow: hidden;
 }
+
+footer > img {
+  background-color: #221f1f;
+  margin-bottom: -200px;
+}
+
 footer > * {
   color: white;
   font-family: "Franklin Gothic Book";
 }
+
 footer > .contactwrapper a {
   color: white;
   text-decoration: none;
