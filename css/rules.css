@@ -88,11 +88,12 @@ body {
 }
 
 .rulecontainer {
-  width: 80%;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #2f2f2f;
   color: white;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 
