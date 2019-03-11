@@ -1,0 +1,106 @@
+footer > img {
+  background-color: #221f1f;
+  margin-bottom: -200px;
+}
+footer {
+  background-color: #e50914;
+  text-align: center;
+  overflow: hidden;
+}
+footer > * {
+  color: white;
+  font-family: "Franklin Gothic Book";
+}
+footer > .contactwrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+footer > .titlewrapper {
+  margin-bottom: 0;
+}
+
+.contactwrapper > h4 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.contactwrapper {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.rulewrapper {
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.rulewrapper > a > h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+  color: white;
+}
+
+.rulewrapper > a,
+#sponsors > a {
+  text-decoration: none;
+}
+
+#sponsors {
+  width: 100%;
+  position: relative;
+}
+
+#simonyi,
+#schonherz {
+  width: 25%;
+  max-width: 380px;
+  margin-left: 5rem;
+}
+
+#schdesign {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  max-width: 250px;
+}
+
+.schdesign_wrapper {
+  width: 100%;
+  position: relative;
+  height: 7rem;
+}
+
+footer > a > img {
+  margin-top: 4rem;
+}
+
+@media (max-width: 1050px) {
+  footer > img {
+    margin: 0 -150px -175px;
+  }
+
+  #simonyi {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #schonherz {
+    width: 90%;
+    margin: 5rem auto 0;
+  }
+
+  .schdesign_wrapper {
+    height: 9rem;
+  }
+
+  #schdesign {
+    width: 90%;
+  }
+}
