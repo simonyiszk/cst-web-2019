@@ -405,7 +405,7 @@ footer > a > img {
     font-size: 1.5rem;
   }
 
-  .subtitlewrapper > h3::before {
+  .team-infowrapper > .subtitlewrapper > h3::before {
     content: none;
   }
 
